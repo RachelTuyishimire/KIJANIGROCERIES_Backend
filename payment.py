@@ -26,11 +26,11 @@ class Payments:
    
 
     def process_payment(self, payment_info):
-        self.payment_status[payment_info["payment_id"]]= payment_status
-        self.payment_information[payment_info[payment_id]]= payment_info
+        self.payment_status[payment_info["payment_id"]]= self.payment_status
+        self.payment_information[payment_info["payment_id"]]= payment_info
 
         
-        
+        return (f"{self.payment_status}{payment_info}")
     def refund_payment(self,payment_id):
         self.payment_status[payment_id] 
         return "refunded"   

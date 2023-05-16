@@ -6,15 +6,14 @@ class Itemson_offer:
     def __init__(self, item_name, price, items_on_offer, add_to_cart):
         self.item_name = item_name
         self.price = price
-        self.cart = add_to_cart
-        self.items_on_offer = items_on_offer
+    
+        self.items_on_offer ={}
+        self.add_to_cart={}
     def check_offers(self):
-        self.cart = True
-        if self.item_name in self.items_on_offer and self.price in self.items_on_offer:
-            self.cart = True
-        return self.cart
+        if self.item_name in self.items_on_offer.keys():
+            self.add_to_cart.self.item_name = self.price
+        return self.add_to_cart
 
-
-offer_item = Itemson_offer("Banana", 200, {"mango":200, "Banana":200 }, False)
+offer_item = Itemson_offer("Banana", 200, {"mango":200, "Banana":200 }, True)
 
 print(offer_item.check_offers())

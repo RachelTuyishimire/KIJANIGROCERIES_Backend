@@ -5,13 +5,14 @@ import uuid
 # as to know, which diver to send and to which mama_mboga
 class Delivery:
 
-    def __init__(self, recepient__name,recepient__phone,delivery_adress,delivery_date,delivery_status):
+    def __init__(self, recepient__name,deliveryId,driver_name,recepient__phone,delivery_adress,delivery_date,delivery_status):
         self.deliveryId= deliveryId
         self.recepient__name= recepient__name
         self.recepient__phone= recepient__phone
         self.delivery_adress= delivery_adress
         self.delivery_date= delivery_date
         self.delivery_status=  delivery_status
+        self.driver_name= driver_name
     # def generate_deliveryId():
     def generate_deliveryId(self):
         deliveryId = str(uuid.uuid4())[:6].upper()
@@ -20,7 +21,7 @@ class Delivery:
     def get_delivery_details(self):
         return (f"delivery: {self.deliveryId} recepient: {self.recepient__name} phone:  {self.recepient__phone} adress: {self.delivery_adress} date:{self.delivery_status}")
 
-    def assign_driver(self,driver_name):
+    def assign_driver(self):
         return (f"{self.driver_name} is assigned{self.deliveryId}")   
 
     
