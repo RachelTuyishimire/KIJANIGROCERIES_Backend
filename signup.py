@@ -3,6 +3,7 @@
 # kijani groceries account.
 # It also confirms  whether the password input is correct through the password 
 # confirmation method.
+# upon successfully setting up an account the user proceeds to log in into the kijani groceries
 
 class signup:
     def __init__(self,First_Name,Last_Name,Email_Address,Phone_No,Account_password,Password_Conf,Delivery_Location) :
@@ -13,22 +14,19 @@ class signup:
         self.Account_password=Account_password   
         self.Password_Conf=Password_Conf
         self.Delivery_Location=Delivery_Location
+        
 # password confirmation checks if the account password is correct
 
     def password_conf(self):
-        if(self.Account_password==self.password_conf):
-            print( f" Please add your {self.Delivery_Location}")
+        if(self.Account_password==self.Password_Conf):
+            print( f"Valid password")
         else:
-            print(f"please enter the correct password")
-    def signup_confirmation(self,firstname,lastname,password,confirmation,email,location,signup):
-         self.firstname=firstname
-         self.lastname=lastname
-         self.password=password
-         self.cofirmation=confirmation
-         self.email=email
-         self.location=location
-         self.signup=signup
-         
-         if(self.First_Name == self.firstname and self.Last_Name ==self.lastname and self.Email_Address ==self.email
-            and self.Account_password==self.password and self.Delivery_Location ==self.location):
-             self.signup_confirmation==self.signup
+            print(f"Please enter the correct password")
+
+    def log_in (self,email,password):
+        if email== self.Email_Address:
+            return (f"Email successful")   
+        elif password== self.Account_password:
+            return(f"Password successful")
+        else :
+            return(f"Your email does not match your password")
