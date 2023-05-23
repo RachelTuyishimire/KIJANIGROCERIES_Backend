@@ -6,8 +6,8 @@ class Itemson_offer:
     def __init__(self, item_name, price, items_on_offer, add_to_cart):
         self.item_name = item_name
         self.price = price
-    
         self.items_on_offer ={}
+    
         self.add_to_cart={}
     def check_offers(self):
         if self.item_name in self.items_on_offer.keys():

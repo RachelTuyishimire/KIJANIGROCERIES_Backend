@@ -4,8 +4,8 @@
 class AvailableGroceries:
     def __init__(self,item_name,price,addtobasket, available_groceries) :
         self.item_name=item_name
-        self.price=price
         self.addtobasket={}
+        self.price=price
         self.groceries = {}
         
     def add_to_cart(self,add):

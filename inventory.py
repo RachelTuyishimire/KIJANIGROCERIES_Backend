@@ -7,8 +7,8 @@ class Product:
     
         # self.image_url=image_url
         self.name = name
-        self.quantity = quantity
         self.price = price
+        self.quantity = quantity
         self.category=quantity
         self.expiry_date= expiry_date
         self.mama_mboga=mama_mboga

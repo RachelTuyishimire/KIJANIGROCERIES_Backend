@@ -15,8 +15,8 @@ class Cart:
             if item == "q":
                 break
             else:
-                price = input(f"Enter the price of {item}")
                 self.cart.append(item)
+                price = input(f"Enter the price of {item}")
                 self.prices.append(price)
             for item in self.cart:
                 print(item)

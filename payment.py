@@ -12,8 +12,8 @@ import uuid
 class Payments:
     def __init__(self, payment_gateway_credentials,payment_status,payment_information):
 
-        self.payment_gateway_credentials= payment_gateway_credentials
         self.payment_status={} 
+        self.payment_gateway_credentials= payment_gateway_credentials
         # We used Dictionary on payment status, to show whether the transaction was successful,
         # declined or is on  progress with its corresponding transaction ID.
         self.payment_information={}
