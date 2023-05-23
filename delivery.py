@@ -6,13 +6,7 @@ import uuid
 class Delivery:
 
     def __init__(self, recepient__name,deliveryId,driver_name,recepient__phone,delivery_adress,delivery_date,delivery_status):
-        self.recepient__phone= recepient__phone
-        self.deliveryId= deliveryId
-        self.recepient__name= recepient__name
-        self.delivery_adress= delivery_adress
-        self.driver_name= driver_name
-        self.delivery_date= delivery_date
-        self.delivery_status=  delivery_status
+
     # def generate_deliveryId():
     def generate_deliveryId(self):
         deliveryId = str(uuid.uuid4())[:6].upper()
